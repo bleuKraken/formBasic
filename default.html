@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        DESCRIPTION: Survey to get general info from users. Has submit
+        button with missing field check. Uses bootstrap to make it look better. Not too much css. 
+        Had alot of fun creating this!!!! Hope you enjoy looking at it ! (:
+    -->
+    
+<!-- Head begins -->
+<head>
+	<title> Basic Info Survey </title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+    
+<!-- Body begins -->
+<body>
+
+    <header class="jumbotron">
+        <h1 class="text-center" id="title"> Registration Form </h1>
+        <div class="container"> 
+            <p id="description"> Descripion: This is a basic webpage with a form to get info from a user. Related to computer science and web development. Webpage uses bootstrap 4.3.1. Form demonstrates inputs, buttons, button groups, checkboxes, dropdowns and more! </p>
+        </div>
+
+    </header>
+    
+    <div class="container">
+    
+    <form id="survey-form">
+        
+        <h2> Basic Info </h2>
+        <!-- TEXTB0X: FIRST NAME -->
+        <label id="name-label" for="firstName">  First Name:  </label>
+        <input name="firstName"  id="name" type="text"
+               placeholder="First" required> <br> <br> 
+        
+        <!-- TEXTB0X: LAST NAME -->
+        <label for="lastName">  Last Name:  </label>
+        <input name="lastNameText"  id="lastName" type="text"
+               placeholder="Last" required>
+        <br>
+        <br>
+                <!-- TEXTB0X: EMAIL -->
+        <label id="email-label" for="email"> User Email: </label>
+        <input name="email" id="email" type="email"
+               placeholder="Email" required>
+        <br>
+        <br>
+         <label for="date">  Birth Date:  </label>
+         
+        <!-- DROPDOWN: Month -->
+        <select id="dropdown" name="birthday">
+            <option value="Jan"> Jan </option>
+            <option value="Feb"> Feb </option>
+            <option value="Mar"> Mar </option>
+            <option value="Apr"> Apr </option>
+            <option value="May"> May </option>
+            <option value="Jun">  Jun  </option>
+            <option value="Jul">  Jul  </option>
+            <option value="Aug">  Aug  </option>
+            <option value="Sep">   Sep </option>
+            <option value="Oct">   Oct </option>
+            <option value="Nov">  Nov  </option>
+            <option value="Dec">  Dec  </option>
+        </select>
+        
+                <!-- DROPDOWN: Date -->
+        <select id="dropdown" name="birthday">
+            <option value="Jan"> 1 </option>
+            <option value="Jan"> 2 </option>
+            <option value="Jan"> 3 </option>
+            <option value="Jan"> 4 </option>
+            <option value="Jan"> 5 </option>
+            <option value="Jan"> 6 </option>
+            <option value="Jan"> 7 </option>
+            <option value="Jan"> 8 </option>
+            <option value="Jan"> 9 </option>
+            <option value="Jan"> 10 </option>
+            <option value="Jan"> 11 </option>
+            
+            <option value="Jan"> 12 </option>
+            <option value="Jan"> 13 </option>
+            <option value="Jan"> 14 </option>
+            <option value="Jan"> 15 </option>
+            <option value="Jan"> 16 </option>
+            <option value="Jan"> 17 </option>
+            <option value="Jan"> 18 </option>
+            <option value="Jan"> 19 </option>
+            <option value="Jan"> 20 </option>
+
+            <option value="Jan"> 21 </option>
+            <option value="Jan"> 22 </option>
+            <option value="Jan"> 23 </option>
+            <option value="Jan"> 24 </option>
+            <option value="Jan"> 25 </option>
+            <option value="Jan"> 26 </option>
+            <option value="Jan"> 27 </option>
+            <option value="Jan"> 28 </option>
+            <option value="Jan"> 29 </option>
+            <option value="Jan"> 30 </option>
+        </select>
+        
+        <!-- DROPDOWN: Year -->
+        <select id="dropdown" name="Year">
+            <option value="Jan"> 2019 </option>
+            <option value="Feb"> 2020 </option>
+            <option value="Mar"> 2021 </option>
+            <option value="Mar"> 2022 </option>
+            <option value="Mar"> 2023 </option>
+            <option value="Mar"> 2024 </option>
+            <option value="Mar"> 2025 </option>
+            <option value="Mar"> 2026 </option>
+            <option value="Mar"> 2027 </option>
+            <option value="Mar"> 2028 </option>
+            <option value="Mar"> 2029 </option>
+            <option value="Mar"> 2030 </option>  
+        </select>
+        <br> 
+        <br> 
+        
+        <!-- GROUP: GENDER-GROUP -->
+        <p> <strong> Select Gender Below </strong> </p>
+        <!-- LABEL: MALE -->
+        <label for="male"> Male: </label>
+        <input name="genderGroup" id="male" type="radio"
+               value="MALE">
+        <!-- LABEL: FEMALE -->
+        <label for="female"> Female:  </label>
+        <input name="genderGroup" id="female" type="radio"
+               value="FEMALE">
+        <br>
+        <br>
+        <h2> Web Development Info </h2>
+        <!-- INPUT: Programming years -->
+        <label id="number-label" for="yearsProgramming"> Years Programming: </label>
+        <input id="number" type="number" name="quantity" min="1" max="100" placeholder="1" required>
+        <br>
+        <br>
+        <h5> Do you have a favorite markup language/ programming language?</h5>
+        
+        <input type="radio" name="fav-lan" value="yes"> Yes <br>
+        <input type="radio" name="fav-lan" value="no"> No <br>
+        <br>
+        
+        <!-- GROUP-CHECKBOX --> 
+        <fieldset>      
+            <h5> What languages have you already started learning? Check all that apply.</h5>      
+            <input type="checkbox" name="html" value="Html">HTML<br>     
+            <input type="checkbox" name="css" value="Css">CSS<br>     
+            <input type="checkbox" name="javascript" value="Javascript">JavaScript<br>   
+            <input type="checkbox" name="jQuery" value="jQuery"> jQuery <br>
+            <input type="checkbox" name="bootstrap" value="Bootstrap"> Bootstrap <br>
+            <input type="checkbox" name="other" value="Other"> Other(s) <br>
+            <br>      
+        </fieldset>  
+        
+        <h5> What got you into learning web development? </h5>
+        <textarea rows="2" cols="50">
+            Click to enter here...
+        </textarea>
+        <br>
+        <br>
+        
+        <h5> You are learning web development to..</h5>
+        <input type="radio" name="reason" value="1"> Switch current job <br>
+        <input type="radio" name="reason" value="2"> Learn as a hobby <br>
+        <input type="radio" name="reason" value="3"> Land first job <br>
+        <input type="radio" name="reason" value="4"> Develop personal website <br>
+        <input type="radio" name="reason" value=""> Other <br>
+        <br>
+
+        <h5>  Please enter any comments or feedback about form. </h5>
+        <textarea rows="4" cols="50">
+        Click to enter comments here...
+        </textarea>
+        <br>
+        <br>
+        
+        <!-- CheckBox -->
+        <p> <input name="AgreeCheckbox" id="agree" type="checkbox"
+               value="AGREE"> I agree the information entered above is correct. It might not be though. This is just for fun. 
+        </p>
+        
+        <!-- BUTTON: SUBMIT -->
+        <button id="submit">
+            Submit
+        </button>  
+    </form> 
+        </div>
+
+    
+</body>
+    
+</html>
