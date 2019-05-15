@@ -46,11 +46,12 @@
                 </select>
             </div>
 
-						<div class="form-group d-flex">
-							 <!-- BIRTHDATE -->
-	             <label for="birthday" class="col-sm-2 text-center">  Birth Date  </label>
+            <!-- BIRTHDATE -->
+	        <label for="birthday">Birth Date</label>
+            <div class="form-group d-flex">
+                
 	            <!-- DROPDOWN: Month -->
-	            <select id="dropdown" class="form-control col-sm-3" name="birthday">
+	            <select id="dropdown" class="form-control col-sm-4" name="birthday">
 	                <option value="Jan"> Jan </option>
 	                <option value="Feb"> Feb </option>
 	                <option value="Mar"> Mar </option>
@@ -66,7 +67,7 @@
 	            </select>
 
                     <!-- DROPDOWN: Date -->
-            <select id="dropdown" class="form-control col-sm-3" name="birthday">
+            <select id="dropdown" class="form-control col-sm-4" name="birthday">
                 <option value="Jan"> 1 </option>
                 <option value="Jan"> 2 </option>
                 <option value="Jan"> 3 </option>
@@ -102,7 +103,7 @@
             </select>
 
             <!-- DROPDOWN: Year -->
-            <select id="dropdown" class="form-control col-sm-3" name="Year">
+            <select id="dropdown" class="form-control col-sm-4" name="Year">
                 <option value="Jan"> 2019 </option>
                 <option value="Feb"> 2020 </option>
                 <option value="Mar"> 2021 </option>
@@ -119,39 +120,57 @@
 					</div>
 
 
-            <h2 class="display-5"> Web Development Info </h2>
+            <h2 class="display-5 "> Web Development Info </h2>
             <!-- INPUT: Programming years -->
-            <label id="number-label" for="yearsProgramming"> 1.) How many years of
-							programming do you have?: </label>
-            <input id="number" type="number" name="quantity" min="1" max="100" placeholder="1" required>
-            <br>
-            <br>
-            <h5> Do you have a favorite markup language/ programming language?</h5>
+            <h5 class="mb-3"> 1.) How many years of
+                programming do you have? </h5>
+            
+            <!-- RADIO BUTTONS SIDEWAYS -->
+            <div class="form-group mb-5">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1 Year or less </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2 Years </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2 Years </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">4+ Years</label>
+                </div>
+            </div>
+            
+            
+            
+            
 
-            <input type="radio" name="fav-lan" value="yes"> Yes <br>
-            <input type="radio" name="fav-lan" value="no"> No <br>
-            <br>
+
 
             <!-- GROUP-CHECKBOX -->
-            <fieldset>
-                <h5> What languages have you already started learning? Check all that apply.</h5>
-                <input type="checkbox" name="html" value="Html">HTML<br>
+            <div class="form-group">
+                <h5 class="mb-3"> 2.) What languages have you already started learning? Check all that apply.</h5>
+                <input type="checkbox" class="form-radio" name="html" value="Html">HTML<br>
                 <input type="checkbox" name="css" value="Css">CSS<br>
                 <input type="checkbox" name="javascript" value="Javascript">JavaScript<br>
                 <input type="checkbox" name="jQuery" value="jQuery"> jQuery <br>
                 <input type="checkbox" name="bootstrap" value="Bootstrap"> Bootstrap <br>
                 <input type="checkbox" name="other" value="Other"> Other(s) <br>
                 <br>
-            </fieldset>
+            </div>
 
-            <h5> What got you into learning web development? </h5>
+            <h5 class="mb-3"> 3.) What got you into learning web development? </h5>
             <textarea rows="2" cols="50">
                 Click to enter here...
             </textarea>
             <br>
             <br>
 
-            <h5> You are learning web development to..</h5>
+            <h5> 4.) You are learning web development to..</h5>
             <input type="radio" name="reason" value="1"> Switch current job <br>
             <input type="radio" name="reason" value="2"> Learn as a hobby <br>
             <input type="radio" name="reason" value="3"> Land first job <br>
@@ -159,22 +178,22 @@
             <input type="radio" name="reason" value=""> Other <br>
             <br>
 
-						<div class="form-group">
-							<h5>  Please enter any comments or feedback about form. </h5>
-	            <textarea rows="4" cols="50">
+            <h2 class="display-5 pt-5 pb-2"> Completion </h2>
+            <div class="form-group">
+                <h5 class="mb-3">  Please enter any comments or feedback about form. </h5>
+	            <textarea class="w-100" rows="4" cols="50">
 	          	  Click to enter comments here...
 	            </textarea>
 						</div>
 
 
-            <h2 class="display-5 pt-5 pb-2"> Completion </h2>
             <!-- CheckBox -->
             <p> <input name="AgreeCheckbox" id="agree" type="checkbox"
                    value="AGREE"> I agree the information entered above is correct. It might not be though. This is just for fun.
             </p>
 
             <!-- BUTTON: SUBMIT -->
-            <button id="submit">
+            <button class="btn btn-primary mb-5" id="submit">
                 Submit
             </button>
         </form>
